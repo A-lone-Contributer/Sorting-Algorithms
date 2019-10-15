@@ -1,1 +1,3 @@
-# Sorting-algorithms-
+# Sorting-algorithms
+
+All sorting algorithms code + explainations!
