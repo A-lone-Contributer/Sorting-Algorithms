@@ -22,7 +22,7 @@ def insertion_sort(arr, n):
 
         # i should not go beyond the lower bound of array and key must be less than current i element
         while i >= 0 and key < arr[i]:
-            # ith element to (i+1)th
+            # insert ith element to (i+1)th
             arr[i + 1] = arr[i]
             # for the purpose of comparing in the sorted part from the current j to start i.e i>=0
             i -= 1
@@ -38,4 +38,5 @@ print(insertion_sort(arr, n))
 
 # Time Complexity: O(n^2)
 # Auxiliary Space: O(1)
+
 
