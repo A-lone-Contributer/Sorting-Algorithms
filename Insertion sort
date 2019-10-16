@@ -32,7 +32,7 @@ def insertion_sort(arr, n):
 
 
 # Driver code
-arr = [10, 43, 67, 2, 6]
+arr = [10, 43, 67, 2, 6, 14]
 n = len(arr)
 print(insertion_sort(arr, n))
 
