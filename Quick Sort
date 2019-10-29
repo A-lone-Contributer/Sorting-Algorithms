@@ -84,5 +84,5 @@ for i in range(n):
 
 # Time Complexity : O(n*log(n)) [Best and Average]
 #                   O(n^2) [Worst Case]
-# Space Complexity : O(1)
+# Space Complexity : O(log(n))
 # Inplace : Yes
