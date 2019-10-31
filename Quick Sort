@@ -10,8 +10,8 @@
 # High level Description:
 
 # Select an element as pivot. (We have picked last element as pivot)
-# Partition the array around the pivot. (A Utility function partition is used for this)
-# After partitioning the pivot element will be at final sorted position.
+# Partition (Lomuto partitioning) the array around the pivot (A Utility function partition is used for this)
+# After partitioning the pivot element will be at its final sorted position.
 # The elements on the left and right are still not sorted.
 # Then we pick sub-arrays, elements on the left of pivot and elements on the right
 # of pivot, and we perform partitioning on them by choosing a pivot in the sub-arrays.
