@@ -7,6 +7,8 @@
 
 # This algorithm sorts in linear time and takes some extra space.
 
+# NOTE : Does not work for negative elements.
+
 # Algorithm:
 # Create a auxiliary array of size k+1 where k is the maximum element in array.
 # Now store the count corresponding to each distinct element in that array.
