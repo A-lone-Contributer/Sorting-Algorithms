@@ -81,4 +81,5 @@ for i in range(0, n):
 
 
 # Time Complexity : O(d*(n+k))
+# where d denotes the number of digits, n is the number of elements and k is the size of count array
 # Space Complexity : O(n)
