@@ -20,16 +20,19 @@ def shell_Sort(arr, n):
     # initialise the gap to 1
     gap = 1
 
+    # initialise gap with the highest gap value for arr
+    while gap <= n / 3:
+        # knuth formula
+        gap = 3 * gap + 1
+
     # Do a insertion sort for this gap size.
     # The first gap elements a[0..gap-1] are already in gaped
     # order. keep adding one more element until the entire array
     # is gap sorted
-    while gap <= n / 3:
+    while gap >= 1:
 
         # for every sub-array of (gap,n)
         for i in range(gap, n):
-
-            # INSERTION SORT
 
             # add a[i] to the elements that have been gap sorted
             # save a[i] in temp and make a hole at position i
@@ -45,15 +48,15 @@ def shell_Sort(arr, n):
             # put key (the original a[i]) in its correct location
             arr[j] = key
 
-        # change the gap size
-        gap = gap * 3 + 1
+        # decrease the gap size
+        gap //= 3
 
     # return arr
     return arr
 
 
 # Driver code
-arr = [4, 6, 3, 2, 1, 9, 7]
+arr = [3, 45, 2, 1, 23, 12, 34]
 n = len(arr)
 print(shell_Sort(arr, n))
 
