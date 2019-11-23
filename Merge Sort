@@ -9,7 +9,7 @@
 # Function for merging arrays divided using merge_sort function
 def merge(arr, start, end):
 
-    # Dividing the array into half
+    # Find the middle Index
     mid = (start + end) // 2
 
     # declaring a temp array for sorting
