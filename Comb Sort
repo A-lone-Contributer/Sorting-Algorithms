@@ -52,7 +52,7 @@ arr = [88, 18, 31, 44, 4, 0, 8, 81, 14, 78, 20, 76, 84, 33, 73, 75, 82, 5, 62, 7
 n = len(arr)
 comb_sort(arr, n)
 for i in range(n):
-    print(arr[i], end="")
+    print(arr[i], end=" ")
 
 
 # Time Complexity : O(n*log(n))
