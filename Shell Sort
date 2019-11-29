@@ -5,9 +5,8 @@
 # reduced until it is 1 for the last pass. A good series of i values is important to efficiency.
 
 # It is better as compared to Insertion sort as unlike insertion sort we don't compare adjacent
-# elements and put them in their right place which involves a lot of swapping, instead we swap far elements
-# using a gap which we will choose as h=h*3+1 (knuth formula). There a lot of other concrete sequences derived
-# which can be looked up on wiki.
+# elements and put them in their right place which involves a lot of swapping, instead we swap far off elements
+# in the array using a gap [choose as h=h*3+1 (knuth formula)]. There a lot of other concrete sequences derived.
 
 # Algorithm:
 # Initialize the value of gap
@@ -22,6 +21,7 @@ def shell_Sort(arr, n):
 
     # initialise gap with the highest gap value for arr
     while gap <= n / 3:
+    
         # knuth formula
         gap = 3 * gap + 1
 
