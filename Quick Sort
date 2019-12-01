@@ -55,7 +55,7 @@ def quick_sort(arr, Start, End):
     # if there is only one element no need to sort
     if Start == End:
 
-        # Print that element
+        # print that element
         print(arr[Start])
 
     # if start is less than end
@@ -82,7 +82,9 @@ quick_sort(arr, 0, n - 1)
 for i in range(n):
     print(arr[i], end=" ")
 
+
 # Time Complexity : O(n*log(n)) [Best and Average]
 #                   O(n^2) [Worst Case]
 # Space Complexity : O(log(n))
 # Inplace : Yes
+# Stable : No
