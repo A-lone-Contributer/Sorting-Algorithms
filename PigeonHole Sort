@@ -1,6 +1,6 @@
 # PIGEONHOLE SORT
 
-# This is a non-comparison based sorting algorithm which works for
+# This is a non-comparison based sorting algorithm that works for
 # arrays where number of elements and the range of possible key values are approximately the
 # same. To perform this sort, we need to make some holes. The number of holes needed is decided
 # by the range of numbers. In each hole, items are inserted. Finally deleted from the hole and stored
