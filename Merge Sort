@@ -4,8 +4,6 @@
 # paradigm. It divides the array in two halves (Divide) recursively then sorts and
 # merge it into a sorted array (Conquer).
 
-# It is not an inplace algorithm.
-
 # Function for merging arrays divided using merge_sort function
 def merge(arr, start, end):
 
@@ -21,7 +19,7 @@ def merge(arr, start, end):
     # a pointer at (mid+1) of arr
     j = mid + 1
 
-    # another pointer (used for tmp) which points to start of arr
+    # another pointer (used for filling tmp array) which initially points to start of arr
     k = start
 
     # while i reaches mid and j reaches the end
@@ -95,3 +93,4 @@ for i in range(len(arr)):
 
 # Time Complexity : O(n*log(n))
 # Space Complexity : O(n)
+# Inplace : No
