@@ -10,17 +10,15 @@
 # Now swap the element with its correct index and now this element which is moved needs to be
 # moved to its correct position which is done by rotating the array.
 
-# Python program to implement cycle sort
-
 def cycle_Sort(arr, n):
 
     # Loop through the array
     for cycleStart in range(0, n - 1):
 
-        # stores the element that will be compared with the rest for swapping
+        # store the element that will be compared with the rest for swapping
         ele = arr[cycleStart]
 
-        # will store the correct index of ele
+        # stores the correct index of ele
         loc = cycleStart
 
         # Find the correct index for ele
