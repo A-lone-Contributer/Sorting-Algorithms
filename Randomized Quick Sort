@@ -12,6 +12,7 @@ from random import randrange
 
 # Function for partitioning around pivot
 def partition(arr, Start, End):
+
     # index of smaller element
     i = Start - 1
 
@@ -23,6 +24,7 @@ def partition(arr, Start, End):
 
         # pivot is greater than current element
         if arr[j] < pivot:
+        
             # increment the index of smaller element
             i += 1
 
